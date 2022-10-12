@@ -69,10 +69,6 @@ function main() {
 
     udp_scan
 
-    echo -e "\e[31m\n[*] Converting scan results to markdown\e[0m"
-
-    nmap2md
-
     echo -e "\e[1;32m[*] Done!\n\e[0m"
 }
 
