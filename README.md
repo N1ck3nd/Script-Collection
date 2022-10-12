@@ -1,2 +1,2 @@
 # Scripts
-Useful scripts
+Useful scripts which could be used during CTFs, etc.
