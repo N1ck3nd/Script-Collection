@@ -3,7 +3,6 @@
 # Script to kick off Nmap scans
 # Add to .zshrc / .bashrc: alias autonmap='sudo bash <PATH>/autonmap.sh'
 
-
 # Argument(s)
 IP=$1
 
