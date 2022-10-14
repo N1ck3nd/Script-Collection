@@ -41,7 +41,7 @@ function heavy_scan() {
 # Run UDP Nmap scan
 function udp_scan() {
     nmap -sU -sV --top-ports 100 --open -vvv -oA nmap/initial-udp $IP -Pn
-    OPENPORTSUDP=$(cat nmap/initial-tcp.nmap | grep ' open' | awk -F/ '{print $1 ","}' ORS=' ' | xargs echo | sed -e 's/,$//')
+    OPENPORTSUDP=$(cat nmap/initial-udp.nmap | grep ' open' | awk -F/ '{print $1 ","}' ORS=' ' | xargs echo | sed -e 's/,$//')
     echo "Top 100 ports - Open UDP Ports: $OPENPORTSUDP" | tee -a nmap/summary.txt
 }
 
